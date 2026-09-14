@@ -24,6 +24,16 @@
             margin: 0 auto;
             }
 
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            }
+
+        figure {
+            margin: 0;
+            }
+
         header,
         section,
         aside,
@@ -55,7 +65,7 @@
     <header>
         <img
     src="images/1.jpg"
-    alt="Фото"
+        alt="Портрет Артема Шерстнева"
     width="200"
     height="200"
 >
@@ -75,19 +85,26 @@
         </section>
         
         <section>
-            <img
-    src="images/2.jpg"
-    alt="Фото"
-    width="350"
-    height="200"
->
-            <img
-    src="images/3.jpg"
-    alt="Фото"
-    width="350"
-    height="200"
->
             <h2>Проекты</h2>
+
+            <div class="project-images">
+                <figure>
+                    <img
+        src="images/2.jpg"
+        alt="Пример графического дизайна"
+        width="350"
+        height="200"
+    >
+                </figure>
+                <figure>
+                    <img
+        src="images/3.jpg"
+        alt="Пример видеомонтажа и визуальных эффектов"
+        width="350"
+        height="200"
+    >
+                </figure>
+            </div>
 
             <ol>
                 <li>Создание динамичных видеороликов</li>
@@ -95,11 +112,6 @@
                 <li>Продюсирование малых блогеров</li>
             </ol>
         </section>
-
-        <aside>
-            <h2>Любимое направление</h2>
-            <p>Цифровое искусство</p>
-        </aside>
 
         <section>
             
@@ -113,10 +125,15 @@
             </form>
         </section>
 
-        <footer>
-            <p>&copy; 2026 Шерстнев Артем Игоревич</p>
-            <p>Контакты: <a href="mailto:sherstnev_work@mail.ru">sherstnev_work@mail.ru</a></p>
-        </footer>
+        <aside>
+            <h2>Любимое направление</h2>
+            <p>Цифровое искусство</p>
+        </aside>
+
     </main>
+    <footer>
+        <p>&copy; 2026 Шерстнев Артем Игоревич</p>
+        <p>Контакты: <a href="mailto:sherstnev_work@mail.ru">sherstnev_work@mail.ru</a></p>
+    </footer>
 </body>
 </html>
